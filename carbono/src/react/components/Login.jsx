@@ -7,13 +7,11 @@ import axios from "axios";
 export const Login = () => {
     const [usuario, setUser] = useState({});
     const navigate = useNavigate();
-    const puerto = "8080";
-    const full = location.protocol + '//' + location.hostname + ":" + puerto;
-
+    
     function onSubmit(e) {
         e.preventDefault();
         axios
-            .post(full +"/login", JSON.stringify(usuario))
+            .post("https://carbonoapplication.herokuapp.com/login", JSON.stringify(usuario))
             .then(({ data }) => {
                 console.log("funciono login", data);
                 window.localStorage.setItem(
@@ -31,10 +29,9 @@ export const Login = () => {
                     rol: data.user.rol,
                     token: data.token
                 }
-                const puerta = "8080";
-                const fulla = location.protocol + '//' + location.hostname + ":" + puerta;
+                
                 console.log("USUARI00O LOG", user)
-                axios.post( fulla +"/logExist", JSON.stringify(user)).then(({ data }) => {
+                axios.post( "https://carbonoapplication.herokuapp.com/logExist", JSON.stringify(user)).then(({ data }) => {
                     if (data) {
                         navigate("/");
                         return

@@ -9,9 +9,7 @@ export const RegisterSector = () => {
     const [usuario, setUser] = useState({});
     const [eleccion, setEleccion] = useState({});
     const [sector, setSector] = useState("");
-    const puerto = "8080";
-    const full = location.protocol + '//' + location.hostname + ":" + puerto;
-
+    
     useEffect(() => {
         const isUserLogg = window.localStorage.getItem("UserLoggedInfo");
         if (isUserLogg) {
@@ -27,7 +25,7 @@ export const RegisterSector = () => {
     const onSubmit = (e) => {
         e.preventDefault();
         axios
-            .post(full +"/addSector", JSON.stringify(eleccion))
+            .post("https://carbonoapplication.herokuapp.com/addSector", JSON.stringify(eleccion))
             .then(({ data }) => {
                 console.log("funciono ADDsector", data);
                 if (document.getElementById("textBox").value) document.getElementById("textBox").value = ""

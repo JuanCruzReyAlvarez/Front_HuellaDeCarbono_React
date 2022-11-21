@@ -12,8 +12,6 @@ export const Contacts = () => {
     const [eleccion, setEleccion] = useState({});
     const [inputs, setInputs] = useState("");
     const [contacts, setContacts] = useState("");
-    const puerto = "8080";
-    const full = location.protocol + '//' + location.hostname + ":" + puerto;
     
     useEffect(() => {
         const isUserLogg = window.localStorage.getItem("UserLoggedInfo");
@@ -26,7 +24,7 @@ export const Contacts = () => {
             })
 
 
-            axios.get(full + "/contacts")
+            axios.get("https://carbonoapplication.herokuapp.com/contacts")
                 .then(({ data }) => {
                     console.log("funciono al traer contacts", data);
                     setContacts(data)
@@ -63,7 +61,7 @@ export const Contacts = () => {
     const onSubmit = (e) => {
         e.preventDefault();
         axios
-            .post("http://localhost:8080/addContacts", JSON.stringify(eleccion))
+            .post("https://carbonoapplication.herokuapp.com/addContacts", JSON.stringify(eleccion))
             .then(({ data }) => {
                 console.log("funciono addContact", data);
 
