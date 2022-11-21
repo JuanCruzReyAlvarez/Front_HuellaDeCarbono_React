@@ -1,0 +1,64 @@
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+ .bodyJour {
+    background-image: url("../styles/images/backJournery.jpg");
+    background-size: cover;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+  }
+
+  
+  /* Timeline Container */
+  .timeline {
+    background: rgb(64, 105, 64);
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  /* Outer Layer with the timeline border */
+  .outer {
+    border-left: 15px solid orangered;
+  }
+  
+  /* Card container */
+  .card {
+    opacity: 1000%;
+    position: relative;
+    margin: 0 0 20px 20px;
+    padding: 10px;
+    background: rgb(0, 0, 0);
+    color: gray;
+    border-radius: 8px;
+    max-width: 400px;
+    opacity: 100%;
+  }
+  
+  /* Information about the timeline */
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Title of the card */
+  .title {
+    color: orangered;
+    position: relative;
+  }
+  
+  /* Timeline dot  */
+  .title::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 999px;
+    left: -39px;
+    border: 3px solid orangered;
+  }

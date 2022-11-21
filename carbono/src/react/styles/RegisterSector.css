@@ -1,0 +1,115 @@
+
+  .Formu{
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://media.admagazine.com/photos/618a61a5af428eae6e0b58f8/master/w_1600%2Cc_limit/85089.jpg);
+  }
+  .FormuPrinc{
+      margin-right: auto;
+      margin-left: 30%;
+      width: 30%;
+      box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+      backdrop-filter: blur(7px);
+      background-color: rgba(255, 255, 255, 0.2);
+      padding: 10px;
+      border-radius: 15px;
+  }
+  .FormuPrinc .PrimTit{
+    font-size: 45px;
+    border-bottom: solid black 4px;
+    width: 20%;
+    padding: 0 0 5px 0;
+  }
+  .FormuPrinc h1,h3{
+    margin-left: 25px;
+  }
+  .form_uno{
+    display: flex;
+  }
+  .uno,.dos{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-large;
+    margin: 0 0 30px 6%;
+  }
+  
+  .uno input{
+    width: 200px;
+    margin-top: 7px;
+  }
+  .dos select{
+    width: 200px;
+    margin-top: 7px;
+  }
+  .tres h2{
+    margin-left: 6%;
+    margin-bottom: 5%;
+    font-size: 20px;
+  }
+  .tres_uno{
+    width: 96%;
+    margin-left: 6%;
+    margin-bottom: 3%;
+    display: flex;
+    font-size: x-large;
+    justify-content: space-around;
+  }
+  .tres_uno label{
+    display: flex;
+  
+  
+  }
+  .tres_uno input{
+    display: flex;
+    width: 85%;
+  
+  }
+  .cuatro{
+    margin-left: 6%;
+  }
+  .cuatro .sector{
+    margin-bottom: 15px;
+  }
+  .sector input#textBox{
+    width: 350px;
+  }
+  .sector input#SectorAg{
+    width: 100px;
+    height: 40px;
+    margin-left: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: solid black 1.5px;
+    font-size: 17px;
+  }
+  
+  .cuatro .sector h1{
+    margin-left: 0%;
+  }
+  section ul{
+    font-size: 20px;
+  }
+  
+  input{
+    font-size: 17px;
+  }
+  .cinco {
+    justify-content: right;
+    display: flex;
+    
+  }
+  .cinco input{
+    background-color: rgb(187, 187, 187);
+    color: #000000;
+    cursor: pointer;
+    width: 180px; height: 40px; border-radius: 7px;
+  }
+  
+ 
+  input[type=text], select, textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }

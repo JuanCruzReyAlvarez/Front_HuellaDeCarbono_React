@@ -1,0 +1,195 @@
+
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position:fixed;
+  width: 103%;
+  height: 100%;
+  background-image: url("../styles/images/calculator.jpg");
+  color: rgb(201, 228, 209);
+  background-size: cover;
+  
+}
+
+.main-container h1{
+  font-family: 'Exo', sans-serif;
+  font-weight:400;
+  
+}
+
+.calculator-container{
+  width: 75%;
+}
+
+.calculator-title-containter{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.calculator-title-containter h2 {
+  font-family: 'Exo', sans-serif;
+  font-weight:400;
+  font-size: 170%;
+}
+.btn{
+  font-family: 'Exo', sans-serif;
+  background-color:  rgb(201, 228, 209);
+  display: inline-block;
+  color: rgb(201, 228, 209);
+  border: 1px solid #2e3d32;
+  border-radius: 0px;
+  font: size 10px;
+  padding: 10px 25px 15px 25px;
+  background-color:rgb(201, 228, 209);
+  
+
+}
+
+.formulario {
+  background-color: rgba(82, 126, 97, 0.397);
+  margin-top: 45px;
+  margin-bottom: 45px;
+  border-radius: 15px;
+  display: grid;
+  justify-content: space-around;
+  grid-gap: 40px;
+  grid-column-gap: 50px;
+  grid-template-columns: auto auto auto;
+}
+
+
+.grid-item label{
+  display: block;
+  margin-bottom: 10px;
+  font-family: 'Exo', sans-serif;
+  font-size: medium;
+}
+
+.grid-item .text-input{
+  width:95%;
+  background-color: rgba(144, 179, 144, 0.769);
+  border:none;
+  font-size: 15px;
+  font-family: 'Exo', sans-serif;
+  padding:10px;
+  border-radius:15px;
+  cursor: pointer;
+  
+}
+.select, textarea, input[type="text"], input[type="password"], input[type="email"] {
+  width:100%;
+  border-radius:0px;
+  opacity: 95%;
+  background-color: #121312c4;
+  border:none;
+  font-size: 15px;
+  font-family: 'Exo', sans-serif;
+  padding:10px;
+  
+}
+
+
+.radio-item{
+  display:inline-;
+
+}
+
+.radio-item input, .radio-item label{
+  display: inline-block;
+  font-family: 'Exo', sans-serif;
+  font-size: medium;
+}
+.caracteristica-input{
+  background-color: rgb(223, 217, 217) !important;
+  border: 0px !important;
+  border-bottom: 1px !important;
+  border-style: solid !important;
+  border-color: #ededed !important;
+  border-radius: 0px !important;
+}
+
+.pop-up-button {
+  font-family: 'Exo', sans-serif;
+  background-color:  rgb(201, 228, 209);
+  display: inline-block;
+  color: #0d4917;
+  font-weight: bold;
+  border: 1px solid #c3d1c7;
+  border-radius: 20px;
+  font-size: 16px;
+  padding: 10px 25px 15px 25px;
+  background-color: rgba(201, 228, 209, 0.685);
+  cursor: pointer;
+
+}
+.pop-up-button:hover{
+background:rgba(116, 138, 109, 0.589);
+}
+
+.pop-up {
+  height:40%;
+  width:60%;
+  margin:40px auto;
+  background:rgb(39, 70, 46);
+  position:relative;
+  z-index:1;
+  border-radius:5px;
+  box-shadow:0 0 20px #000;
+  cursor: pointer;
+}
+.pop-up-container{
+  height:700px;
+  width:100%;
+  background:#000;
+  opacity:.5;
+  position:relative;
+  z-index:-1;
+  margin-top:-450px;
+}
+.span { /* la x */
+  border-radius:0 0 30px 30px;
+  margin-left:95%;
+  background:rgb(179, 35, 35);
+  color:rgba(255, 255, 255, 0.788);
+  font-size:20px;
+  height:10px;
+  padding:1%;
+  cursor:pointer;
+  
+}
+.span:hover{
+  background:rgb(206, 39, 39);
+}
+
+.pop-up-text {
+  box-sizing:border-box;
+  padding:20px;  
+}
+.pop-up-text h1{
+  font-size:2em;
+  margin-bottom:20px;
+}
+.pop-up-text p{
+  font-size:1em;
+  margin-bottom:10px;
+}
+.pop-up-text a {
+  color:#FF3D3D;
+  margin-bottom:10px;
+}
+.pop-up-text img {
+  max-height:200px;
+  width:100%;
+  text-align:center;
+  margin-bottom:10px;
+}
+
+.containerPie{
+  
+    width: 90%;
+    height: 50%;
+
+}

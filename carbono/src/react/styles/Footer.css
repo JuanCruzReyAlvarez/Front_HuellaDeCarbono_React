@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@300&family=Rubik:wght@400;500;700&display=swap");
+body{
+    padding: 0%;
+    margin: 0%;
+}
+main{
+    height:max-content;
+    background-color: blue;
+    display: block;
+}
+footer{
+    float: bottom;
+    height: 400px;
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+    background: rgb(0,0,0);
+background: linear-gradient(164deg, rgba(0,0,0,1) 0%, rgba(14,14,14,1) 0%, rgba(61,61,61,1) 100%);
+}
+.arr{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    margin-left: 0ch;
+    margin-right: 0ch;
+    /* background-color: red; */
+    padding: 0%;
+    margin: 0%;
+}
+ul{
+    list-style-type: none;
+    padding:0;
+}
+li{
+    margin: 0 0 15px 0;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 500;
+    transition: 0.3s 4px solid transparent;
+    margin-bottom: 0.5rem;
+}
+a:hover {
+    border-bottom: 3px solid aliceblue;
+}
+.arr_uno{
+    /* color: aliceblue; */
+    padding: 0%;
+    margin: 0 0 0 9%;
+    height: 100%;
+    width: 11%;
+    display: inline-block;
+    text-align: left;
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.arr_uno h3{
+    color: aliceblue;
+}
+.arr_dos{
+    padding: 0%;
+    margin: 0 0 0 9%;
+    height: 100%;
+    width: 11%;
+    display: inline-block;
+    color: aliceblue;
+    text-align: left;
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.arr_dos h3{
+    color: aliceblue;
+}
+.arr_tres{
+    padding: 0%;
+    margin: 0 0 0 9%;
+    height: 100%;
+    width: 49%;
+    display: inline-block;
+    color: aliceblue;
+    text-align: left;
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.arr_tres p{
+    text-align: left;
+    line-height: 1.6;
+}
+h3{
+    font-size: 30px;
+}
+.aba{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+}
+.aba_uno{
+    margin: 35px 0 0 0;
+    height: 70px;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0 0 0;
+}
+svg{
+    margin-right: 25px;
+    color: grey;
+    cursor: pointer;
+}
+
+.aba_dos{
+    margin: 20px 0 0 0;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+
+}
+.aba_dos p{
+    margin: auto;
+    display: flex;
+    text-align: center;
+    width: fit-content; height: fit-content;
+    font-size: Large;
+    color: aliceblue;
+}

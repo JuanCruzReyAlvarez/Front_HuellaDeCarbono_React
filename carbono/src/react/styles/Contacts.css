@@ -1,0 +1,320 @@
+
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+.aa {
+    position: absolute;
+    background-image: url("../styles/images/birds.jpg");
+    background-size: cover;
+    font-family: 'Lato', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%; height: 100%;
+    
+
+}
+
+
+.ccformcont {
+  border-radius: 15px;
+  margin-left: -350px;
+  bottom: 360px;
+  background-color: #00000060;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  font-family: 'Lato', Arial, sans-serif;
+}
+
+.ccformcont h1 {
+  font-family: 'Lato', Arial, sans-serif;
+  font-weight: 400;
+}
+
+.ccform {
+    border-radius: 15px;
+    margin-left: 420px;
+    background-color: #1a271660;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    font-family: 'Lato', Arial, sans-serif;
+}
+
+.ccform h1 {
+    font-family: 'Lato', Arial, sans-serif;
+    font-weight: 400;
+}
+
+.ccfield-prepend {
+    align-items: center;
+    margin-left: 14%;
+    margin-bottom: 10px;
+    width: 80%;
+}
+
+.ccform-addon {
+    border-radius: 15px;
+    margin-right: 3%;
+    color: #4f8049;
+    float: left;
+    padding: 8px;
+    width: 8%;
+    background: #FFFFFF;
+    text-align: center;
+}
+
+.ccformfield {
+    border-radius: 15px;
+    color: #000000;
+    background: #FFFFFF;
+    border: none;
+    padding: 15.5px;
+    width: 91.9%;
+    display: block;
+    font-family: 'Lato', Arial, sans-serif;
+    font-size: 14px;
+}
+
+.ccformfield {
+    border-radius: 15px;
+    font-family: 'Lato', Arial, sans-serif;
+}
+
+.buttons {
+
+    display: grid;
+    grid-gap: 5%;
+    grid-template-columns: auto auto;
+    margin-left: 18%;
+    justify-content: left;
+    align-items: center;
+
+}
+
+.ccbtn {
+    border-radius: 15px;
+    display: block;
+    border: none;
+    background: #4f8049;
+    color: #ffffff;
+
+    padding: 7px 19px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.ccbtn:hover {
+    background: #d8850e;
+
+}
+
+ 
+.conteinerLista{
+    position: absolute;
+      top: -20px;
+      left: -20px;
+      right: -40px;
+      bottom: -40px;
+      width: auto;
+      height: auto;
+     background-image: url("../styles/images/birds.jpg");
+      background-size: cover; 
+      z-index: 0;
+  } 
+
+.conteinerLista {
+    position: absolute;
+}
+
+.contacts {
+    
+    background-color: rgba(44, 65, 55, 0.356);
+    z-index: 100;
+    height: 90vh;
+    margin-top: 3%;
+    margin-left: 100%;
+    width: 120%;
+     overflow: scroll; 
+}
+
+.contacts__title {
+    padding-bottom: 1rem;
+    text-align: center;
+    font-family: 'Lato', Arial, sans-serif;
+}
+
+.contacts__subtitle {
+    background-color: rgba(rgba(135, 189, 122, 0.589), 0.5);
+    padding: 0.5rem;
+    position: sticky;
+    top: 0;
+}
+
+.contacts__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contacts__item:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+
+.boton {
+    text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 50%;
+    display: inline;
+    color: rgb(255, 255, 255);
+    background: #7F8C8D;
+    padding: 1px 6px;
+    white-space: nowrap;
+    border-radius: 15px;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 100px;
+    position: relative;
+    top: -30px;
+    margin-left: 2%;
+
+
+}
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web);
+
+
+.sectioncontacts {
+  align-self: top;
+  margin: 150px 0;
+  display: block;
+  position: absolute;
+  margin-left: 300px;
+  width: 380px;
+  max-height: 550px;
+  color: rgba(255, 255, 255, 0.7);
+  background: rgba(0, 0, 0, 0.05);
+  border-top: 15px solid rgba(0, 0, 0, 0.15);
+  border-bottom: 40px solid rgba(0, 0, 0, 0.06);
+  box-shadow: -4vh -6vh 16vh -6vh rgba(0, 0, 0, 0.2), -4vh 6vh 16vh -6vh rgba(0, 0, 0, 0.15);
+}
+
+
+section header {
+  padding: 1em 1.4em;
+  background: rgba(0, 0, 0, 0.12);
+  margin: 0 auto 0 auto;
+}
+section header h4 {
+  height: 3rem;
+  margin: 0 0 1rem 0;
+  padding: 0;
+  line-height: 1.1rem;
+  text-align: center;
+  border-radius: 3px;
+  font-size: 1.1rem;
+}
+section header h4 span {
+  padding: 1.2rem;
+}
+section header h4 span.c {
+  padding: 0.5rem;
+  background: rgba(0, 0, 0, 0.045);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.8);
+}
+section header input[type=search] {
+  margin: 0 0.5rem;
+  padding: 0.5rem;
+  width: 95%;
+  color: rgba(0, 0, 0, 0.8);
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  font-size: 1.15rem;
+  transition: translateX 6s ease-in;
+}
+section header input[type=search]:focus {
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+section header input[type=search]:focus::-webkit-input-placeholder {
+  transform: translateX(70%);
+  opacity: 0;
+}
+section header input[type=search]:focus::-webkit-input-placeholder:-moz-placeholder {
+  transform: translateX(70%);
+  opacity: 0;
+}
+section header input[type=search]:focus::-webkit-input-placeholder::-moz-placeholder {
+  transform: translateX(70%);
+  opacity: 0;
+}
+section header input[type=search]:focus::-webkit-input-placeholder:-ms-input-placeholder {
+  transform: translateX(70%);
+  opacity: 0;
+}
+section header input[type=search]:focus::-webkit-input-placeholder::-ms-input-placeholder {
+  transform: translateX(70%);
+  opacity: 0;
+}
+section header input[type=search]::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.8);
+  -webkit-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
+  transform-origin: 0 50%;
+}
+section header input[type=search]:-moz-placeholder {
+  color: rgba(233, 205, 254, 0.8);
+  -moz-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
+  transform-origin: 0 50%;
+}
+section header input[type=search]::-moz-placeholder {
+  color: rgba(233, 205, 254, 0.8);
+  -moz-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
+  transform-origin: 0 50%;
+}
+section header input[type=search]:-ms-input-placeholder {
+  color: rgba(233, 205, 254, 0.8);
+  -ms-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
+  transform-origin: 0 50%;
+}
+section header input[type=search]::-ms-input-placeholder {
+  color: rgba(233, 205, 254, 0.8);
+  -ms-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
+  transform-origin: 0 50%;
+}
+section .filter {
+  padding: 1rem 0;
+}
+section .filter li {
+  width: 100%;
+  padding: 1rem 0;
+  line-height: 1.5rem;
+  filter: drop-shadow(26px 26px 20px rgba(0, 0, 0, 0.7));
+  list-style-type: none;
+  text-align: left;
+}
+section .filter li span {
+  font-size: 1.15rem;
+  padding: 1.8rem;
+}
+section .filter li:nth-child(odd) {
+  background: rgba(255, 255, 255, 0.03);
+  margin: 0;
+}
+
+

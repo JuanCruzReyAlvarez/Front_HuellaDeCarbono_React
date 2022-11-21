@@ -1,0 +1,207 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+.TransportsContainer {
+    position: relative;
+    background-image: url("/carbono/src/react/styles/images/birds.jpg");
+    background-size: cover;
+    /*-webkit-filter: blur(5px);*/
+
+    font-weight: 400;
+    font-size: 1em;
+    font-family: 'Lato', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+.ccform {
+    border-radius: 15px;
+    background-color: #1a271660;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    font-family: 'Lato', Arial, sans-serif;
+}
+
+.ccform h1 {
+    font-family: 'Lato', Arial, sans-serif;
+    font-weight: 400;
+}
+
+.ccfield-prepend {
+    align-items: center;
+    margin-left: 14%;
+    margin-bottom: 10px;
+    width: 80%;
+}
+
+.ccform-addon {
+    border-radius: 15px;
+    margin-right: 3%;
+    color: #4f8049;
+    float: left;
+    padding: 8px;
+    width: 8%;
+    background: #FFFFFF;
+    text-align: center;
+}
+
+.ccformfield {
+    border-radius: 15px;
+    color: #000000;
+    background: #FFFFFF;
+    border: none;
+    padding: 15.5px;
+    width: 91.9%;
+    display: block;
+    font-family: 'Lato', Arial, sans-serif;
+    font-size: 14px;
+}
+
+.ccformfield {
+    border-radius: 15px;
+    font-family: 'Lato', Arial, sans-serif;
+}
+
+.buttons {
+
+    display: grid;
+    grid-gap: 5%;
+    grid-template-columns: auto auto;
+    margin-left: 18%;
+    justify-content: left;
+    align-items: center;
+
+}
+
+.ccbtn {
+    border-radius: 15px;
+    display: block;
+    border: none;
+    background: #4f8049;
+    color: #ffffff;
+
+    padding: 7px 19px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.ccbtn:hover {
+    background: #d8850e;
+
+}
+/*////////////////////////*/
+/*
+.conteinerLista{
+    position: absolute;
+      top: -20px;
+      left: -20px;
+      right: -40px;
+      bottom: -40px;
+      width: auto;
+      height: auto;
+     background-image: url("../../main/resources/public/css/images/birds.jpg");
+      background-size: cover;
+      
+      z-index: 0;
+  
+   
+  
+  }*/
+.conteinerLista {
+    position: absolute;
+    
+
+}
+
+.contacts {
+    
+    background-color: rgba(44, 65, 55, 0.356);
+    
+  
+    height: 90vh;
+    margin-top: 3%;
+    margin-left: 345%;
+    width: 120%;
+    overflow: scroll;
+}
+
+.contacts__title {
+    padding-bottom: 1rem;
+    text-align: center;
+    font-family: 'Lato', Arial, sans-serif;
+}
+
+.contacts__subtitle {
+    background-color: rgba(rgba(135, 189, 122, 0.589), 0.5);
+    padding: 0.5rem;
+    position: sticky;
+    top: 0;
+}
+
+.contacts__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contacts__item:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+
+.boton {
+    text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 50%;
+    display: inline;
+    color: rgb(255, 255, 255);
+    background: #7F8C8D;
+    padding: 1px 6px;
+    white-space: nowrap;
+    border-radius: 15px;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 100px;
+    position: relative;
+    top: -30px;
+    margin-left: 2%;
+
+
+}
+
+
+.verde {
+    background: #e2d522;
+    box-shadow: 0px 5px 0px 0px #a5ae27;
+}
+
+.verde:hover {
+    background: #f6f86f;
+}
+
+.verde:active {
+    box-shadow: 0px 2px 0px 0px #aeac27;
+}
+
+.rojo {
+    background: #e96354;
+    box-shadow: 0px 5px 0px 0px #f8584a94;
+
+    margin-left: 80%;
+}
+
+.rojo:hover {
+    background: #cc6f67;
+}
+
+.rojo:active {
+    box-shadow: 0px 2px 0px 0px #f8584ace;
+}

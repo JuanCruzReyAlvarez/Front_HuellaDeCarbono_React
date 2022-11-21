@@ -1,0 +1,150 @@
+.RegistrarMediciones {
+    display: flex;
+    width: 100%; height: 100%;
+    text-align: center;
+    padding: 0%;
+    margin: 0%;
+    background-image: url("https://wallpaperaccess.com/full/4438987.jpg");
+    backdrop-filter: blur(2px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+}
+.titulo{
+    margin:0 0 3% 33%;
+}
+.titulo h1{
+    width: 50%;
+    border-bottom: snow 2px solid;
+    padding: 2% 0 0 0;
+    font-family: 'Enriqueta', arial, serif; line-height: 1.25; margin: 0 0 10px; font-size: 45px; font-weight: bold;
+}
+.paragraph-mediciones{
+    margin: 0 0 10% 0;
+}
+.paragraph-mediciones p{
+    font-size: large;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.bg-img{
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    position: absolute;
+    display: block;
+    width: 90%; height: 90%;
+    text-align: center;
+    padding: 0%;
+    margin: 1% 0 0 0;
+
+    justify-content: center;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+}
+.bg-img:before{
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    filter: blur(10px);
+    margin: -20px;
+}
+
+.file-upload {
+    background-color: transparent;
+    width: 600px;
+    margin: 0px auto;
+    padding: 0%;
+}
+
+  .file-upload-content {
+    display: none;
+    text-align: center;
+  }
+  
+  .file-upload-input {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .image-upload-wrap {
+    display: flex;
+    margin-top: 20px;
+    border: 4px dashed whitesmoke;
+    position: relative;
+    justify-content: center;
+    border-radius: 8px;
+  }
+  
+
+  
+  .image-title-wrap {
+    padding: 0 15px 15px 15px;
+    color: #222;
+  }
+  
+  .drag-text {
+    text-align: center;
+  }
+  
+  .drag-text h3 {
+    font-weight: 100;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: whitesmoke;
+    padding: 60px 0;
+  }
+  
+  .file-upload-image {
+    max-height: 200px;
+    max-width: 200px;
+    margin: 0%;
+    padding: 0%;
+  }
+  
+  .image-dropping,
+  .image-upload-wrap:hover {
+    background-color: #9c9c9c;
+    border: 4px dashed whitesmoke;
+  }
+
+  .remove-image {
+    width: 200px;
+    margin: 0;
+    color: #fff;
+    background: #cd4535;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    border-bottom: 4px solid #b02818;
+    transition: all .2s ease;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  
+  .remove-image:hover {
+    background: #c13b2a;
+    color: #ffffff;
+    transition: all .2s ease;
+    cursor: pointer;
+  }
+  
+  .remove-image:active {
+    border: 0;
+    transition: all .2s ease;
+  }
