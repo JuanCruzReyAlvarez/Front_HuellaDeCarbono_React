@@ -7,8 +7,6 @@ import { Resultado } from "./Resultado.jsx";
 
 export const Sector = () => {
 
-    const puerto = "8080";
-    const full = location.protocol + '//' + location.hostname + ":" + puerto;
     
     const [usuario, setUser] = useState({});
     const [organizaciones, setOrganizaciones] = useState({});
@@ -22,7 +20,7 @@ export const Sector = () => {
             let user = JSON.parse(isUserLogg);
             setUser(user);
             axios
-                .post(full +"/organizacionName",
+                .post("https://carbonoapplication.herokuapp.com/organizacionName",
                     JSON.stringify(user)
                 )
                 .then(({ data }) => {
@@ -39,7 +37,7 @@ export const Sector = () => {
 
                     //TRAER LOS SECTORES POR ID DE ORG una vez que la ruta responda bien con la org:
                     axios
-                        .post(full +"/sectores",
+                        .post("https://carbonoapplication.herokuapp.com/sectores",
                             JSON.stringify({ id: data.id })
                         )
                         .then(({ data }) => {
@@ -96,7 +94,7 @@ export const Sector = () => {
     const onSubmit = (e) => {
         console.log("CALCULO A MANDAR:", calculo);
         axios
-            .post("http://localhost:8080/calculators", JSON.stringify(calculo))
+            .post("https://carbonoapplication.herokuapp.com/calculators", JSON.stringify(calculo))
             .then(({ data }) => {
                 console.log(
                     "Calculo realizado correctamente, valor obtenido:",

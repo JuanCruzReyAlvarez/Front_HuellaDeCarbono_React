@@ -14,16 +14,14 @@ export const Miembro = () => {
 
     useEffect(() => {
 
-        const puerto = "8080";
-        const full = location.protocol + '//' + location.hostname + ":" + puerto;
-
+        
         const isUserLogg = window.localStorage.getItem("UserLoggedInfo");
         if (isUserLogg) {
             let user = JSON.parse(isUserLogg);
             console.log("User log", user);
             setUser(user);
             axios
-                .post(full +"/organizacionName",
+                .post("https://carbonoapplication.herokuapp.com/organizacionName",
                     JSON.stringify(user)
                 )
                 .then(({ data }) => {
@@ -33,7 +31,7 @@ export const Miembro = () => {
                     setOrganizaciones(dataOrg);
                     axios
                         .post(
-                            "http://localhost:8080/miembros",
+                            "https://carbonoapplication.herokuapp.com/miembros",
                             JSON.stringify({ OrganizacionId: dataOrg.id })
                         )
                         .then(({ data }) => {
@@ -97,7 +95,7 @@ export const Miembro = () => {
     const onSubmit = (e) => {
         console.log("CALCULO A MANDAR:", calculo);
         axios
-            .post("http://localhost:8080/calculators", JSON.stringify(calculo))
+            .post("https://carbonoapplication.herokuapp.com/calculators", JSON.stringify(calculo))
             .then(({ data }) => {
                 console.log(
                     "Calculo realizado correctamente, valor obtenido:",

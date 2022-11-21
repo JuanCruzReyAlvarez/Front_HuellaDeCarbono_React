@@ -27,9 +27,6 @@ export const Trayecto = () => {
     const [localidades, setLocalidades] = useState([]);
     const [type, setType] = useState("");
 
-    const puerto = "8080";
-    const full = location.protocol + '//' + location.hostname + ":" + puerto;
-
     useEffect(() => {
         const isUserLogg = window.localStorage.getItem("UserLoggedInfo");
         if (isUserLogg) {
@@ -41,7 +38,7 @@ export const Trayecto = () => {
             });
 
             axios
-                .get(full +"/provinciasss", JSON.stringify(user))
+                .get("https://carbonoapplication.herokuapp.com/provinciasss", JSON.stringify(user))
                 .then(({ data }) => {
                     console.log("funcionaron las provincias ", data);
                     data.unshift({ id: "", name: "Seleccionar" });
@@ -92,7 +89,7 @@ export const Trayecto = () => {
         setLocalidades([]);
         setEleccion({ ...eleccion, [prov]: provinciaID });
         axios
-            .post(full +"/municipio",
+            .post("https://carbonoapplication.herokuapp.com/municipio",
                 JSON.stringify({ id: provinciaID })
             )
             .then(({ data }) => {
@@ -112,7 +109,7 @@ export const Trayecto = () => {
         if (!idMunicipio) return;
         setEleccion({ ...eleccion, [municipio]: idMunicipio });
         axios
-            .post(full +"/localidad",
+            .post("https://carbonoapplication.herokuapp.com/localidad",
                 JSON.stringify({ id: idMunicipio })
             )
             .then(({ data }) => {
@@ -198,7 +195,7 @@ export const Trayecto = () => {
         }
         console.log("Trayecto a mandar:", listaDeElecciones);
         axios
-            .post(full +"/trayecto",
+            .post("https://carbonoapplication.herokuapp.com/trayecto",
                 JSON.stringify(listaDeElecciones)
             )
             .then(({ data }) => {

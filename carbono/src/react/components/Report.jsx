@@ -11,8 +11,7 @@ export const Report = () => {
 
     const [report, setReportes] = useState("");
     const [eleccion, setEleccion] = useState({});
-    const puerto = "8080";
-    const full = location.protocol + '//' + location.hostname + ":" + puerto;
+
 
     // $(function () {
     //     $('#buttonSectorTerritorial').click(function () {

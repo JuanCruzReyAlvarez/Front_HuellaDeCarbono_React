@@ -21,7 +21,7 @@ export const Contacts = () => {
             setEleccion({
                 rol: user.rol,
                 userId: user.id
-            })
+            })    
 
 
             axios.get("https://carbonoapplication.herokuapp.com/contacts")
