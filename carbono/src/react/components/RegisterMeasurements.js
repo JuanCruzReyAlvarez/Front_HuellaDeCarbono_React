@@ -9,8 +9,8 @@ export const RegisterMeasurements = () => {
   const [usuario, setUser] = useState({});
   const [eleccion, setEleccion] = useState({});
   const [archivo, setArchivo] = useState(null);
-  const puerto = "8080";
-  const full = location.protocol + '//' + location.hostname + ":" + puerto;
+
+
 
   useEffect(() => {
     const isUserLogg = window.localStorage.getItem("UserLoggedInfo");
@@ -89,7 +89,7 @@ export const RegisterMeasurements = () => {
 
 
     await axios
-      .post(full +"/metrics", f, { headers: { "Content-Type": "multipart/form-data" } })
+      .post("https://carbonoapplication.herokuapp.com/metrics", f, { headers: { "Content-Type": "multipart/form-data" } })
       .then(({ data }) => {
         console.log("funcionaron la subida del excel ", data);
       })
