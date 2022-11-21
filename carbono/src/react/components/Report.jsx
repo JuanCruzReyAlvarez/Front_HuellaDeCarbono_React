@@ -104,7 +104,7 @@ export const Report = () => {
 
     const submitCalculo = (e) => {
         e.preventDefault()
-        axios.post( full + "/getReport", JSON.stringify(eleccion)).then(({ data }) => {
+        axios.post("https://carbonoapplication.herokuapp.com/getReport", JSON.stringify(eleccion)).then(({ data }) => {
             let reportes = data.reporte
             console.log("funcionaron los reportes ", reportes)
             setReportes({
